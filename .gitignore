@@ -1,0 +1,60 @@
+# ==========================================================================
+   cvCreatorSft - Reglas de Exclusión de Git (.gitignore)
+   ==========================================================================
+
+# --- Archivos de Sistema Operativo ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Entornos de Desarrollo y Editores de Código ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+*.bak
+
+# --- Archivos Temporales y Logs de Depuración ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.tmp/
+tmp/
+temp/
+.cache/
+
+# --- Dependencias y Módulos (si se agregan en el futuro) ---
+node_modules/
+bower_components/
+
+# --- Salidas de Compilación y Bundles ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# --- Variables de Entorno y Claves Privadas ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
