@@ -58,3 +58,7 @@ out/
 .env.production.local
 *.pem
 *.key
+sync_config.json*
+sftp.json
+
+sync_config.jsonc
