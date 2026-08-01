@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ATS Resume Craft | Creador de CV Optimizado para ATS</title>
-  <meta name="description" content="Plataforma SaaS interactiva para crear, editar y optimizar currículums vitae 100% compatibles con filtros ATS de selección de personal.">
+  <meta name="description"
+    content="Plataforma SaaS interactiva para crear, editar y optimizar currículums vitae 100% compatibles con filtros ATS de selección de personal.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/ats-templates.css">
 </head>
+
 <body>
   <div id="app" class="app-container">
     <!-- Header Principal Surftware Style -->
     <header class="app-header">
       <div class="brand-section">
-        <img src="images/header_logo.webp" alt="Surftware Logo" style="height: 38px; width: auto; filter: drop-shadow(0 0 10px rgba(255, 0, 127, 0.4));">
+        <img src="images/creacion-paginas-web.webp" alt="Surftware Logo"
+          style="height: 38px; width: auto; filter: drop-shadow(0 0 10px rgba(255, 0, 127, 0.4));">
         <div class="brand-titles">
           <h1>ATS <span class="brand-sub">Craft</span></h1>
           <span class="brand-badge">Surftware Tech</span>
@@ -40,7 +46,8 @@
         <div class="score-circle-mini">
           <svg class="score-svg" viewBox="0 0 36 36">
             <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-            <path class="circle-progress" id="atsScoreProgress" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path class="circle-progress" id="atsScoreProgress" stroke-dasharray="0, 100"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
           </svg>
           <span id="atsScoreText" class="score-text-val">0%</span>
         </div>
@@ -80,7 +87,8 @@
         </button>
 
         <button id="btnThemeToggle" class="btn btn-secondary btn-icon-only" title="Cambiar Tema (Oscuro/Claro)">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -91,7 +99,8 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
@@ -100,10 +109,10 @@
 
     <!-- Disposición Principal (Pantalla Dividida) -->
     <main class="main-split-container">
-      
+
       <!-- PANEL IZQUIERDO: Formulario de Edición Estilo CotizadorSft -->
       <section class="editor-panel">
-        
+
         <!-- Barra de Pasos Estilo CotizadorSft -->
         <div class="cotizador-steps-bar">
           <div class="cotizador-step active" data-step="personal">
@@ -135,43 +144,69 @@
         <!-- Navegación de Pestañas de Secciones -->
         <nav class="editor-tabs" aria-label="Secciones del CV">
           <button class="tab-btn active" data-tab="personal">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
             Personal
           </button>
           <button class="tab-btn" data-tab="summary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
             Perfil
           </button>
           <button class="tab-btn" data-tab="experience">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
             Experiencia
           </button>
           <button class="tab-btn" data-tab="education">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
             Educación
           </button>
           <button class="tab-btn" data-tab="skills">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
             Habilidades
           </button>
           <button class="tab-btn" data-tab="projects">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
             Proyectos
           </button>
           <button class="tab-btn" data-tab="extras">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
             Más
           </button>
         </nav>
 
         <!-- Contenido de las Pestañas -->
         <div class="editor-content-scroll">
-          
+
           <!-- TAB 1: DATOS PERSONALES -->
           <div class="tab-pane active" id="pane-personal">
             <div class="pane-header">
               <h2>Información Personal</h2>
-              <p class="pane-desc">Los reclutadores y sistemas ATS necesitan identificar claramente tus datos de contacto.</p>
+              <p class="pane-desc">Los reclutadores y sistemas ATS necesitan identificar claramente tus datos de
+                contacto.</p>
             </div>
             <form id="form-personal" class="form-grid">
               <div class="form-group col-full">
@@ -180,7 +215,8 @@
               </div>
               <div class="form-group col-half">
                 <label for="jobTitle">Título Profesional / Cargo Objetivo *</label>
-                <input type="text" id="jobTitle" class="form-control" placeholder="ej. Senior Full Stack Engineer" required>
+                <input type="text" id="jobTitle" class="form-control" placeholder="ej. Senior Full Stack Engineer"
+                  required>
               </div>
               <div class="form-group col-half">
                 <label for="email">Correo Electrónico *</label>
@@ -209,7 +245,8 @@
           <div class="tab-pane" id="pane-summary">
             <div class="pane-header">
               <h2>Perfil / Resumen Profesional</h2>
-              <p class="pane-desc">Síntesis de 3 a 5 líneas destacando tus mayores logros, especialidad técnica y propuesta de valor.</p>
+              <p class="pane-desc">Síntesis de 3 a 5 líneas destacando tus mayores logros, especialidad técnica y
+                propuesta de valor.</p>
             </div>
             <div class="form-group">
               <div class="textarea-header">
@@ -218,7 +255,8 @@
                   ✨ Ver frases sugeridas
                 </button>
               </div>
-              <textarea id="summaryText" class="form-control textarea-large" rows="6" placeholder="Ingeniero de Software Senior con más de 6 años de experiencia especializándose en desarrollo web moderno, arquitectura escalable y optimización de rendimiento. Demostrada trayectoria liderando equipos ágiles e incrementando la eficiencia de procesamiento de datos en un 40%."></textarea>
+              <textarea id="summaryText" class="form-control textarea-large" rows="6"
+                placeholder="Ingeniero de Software Senior con más de 6 años de experiencia especializándose en desarrollo web moderno, arquitectura escalable y optimización de rendimiento. Demostrada trayectoria liderando equipos ágiles e incrementando la eficiencia de procesamiento de datos en un 40%."></textarea>
               <div class="field-hint">
                 <span id="summaryCharCount">0 palabras (Recomendado: 40-90 palabras)</span>
               </div>
@@ -230,7 +268,8 @@
             <div class="pane-header flex-between">
               <div>
                 <h2>Experiencia Laboral</h2>
-                <p class="pane-desc">Enumera tus empleos recientes. Usa viñetas con verbos de acción y resultados cuantificables.</p>
+                <p class="pane-desc">Enumera tus empleos recientes. Usa viñetas con verbos de acción y resultados
+                  cuantificables.</p>
               </div>
               <button type="button" id="btnAddExperience" class="btn btn-secondary btn-sm">
                 + Agregar Empleo
@@ -244,7 +283,8 @@
             <div class="pane-header flex-between">
               <div>
                 <h2>Educación & Formación</h2>
-                <p class="pane-desc">Grados académicos, carreras técnicas o estudios superiores ordenados cronológicamente.</p>
+                <p class="pane-desc">Grados académicos, carreras técnicas o estudios superiores ordenados
+                  cronológicamente.</p>
               </div>
               <button type="button" id="btnAddEducation" class="btn btn-secondary btn-sm">
                 + Agregar Estudio
@@ -257,24 +297,28 @@
           <div class="tab-pane" id="pane-skills">
             <div class="pane-header">
               <h2>Habilidades Técnicas & Competencias</h2>
-              <p class="pane-desc">Organiza tus habilidades por categorías clave. Los algoritmos ATS escanean intensamente esta sección.</p>
+              <p class="pane-desc">Organiza tus habilidades por categorías clave. Los algoritmos ATS escanean
+                intensamente esta sección.</p>
             </div>
-            
+
             <div class="form-group mb-4">
               <label for="techSkillsInput">Habilidades Técnicas (Hard Skills)</label>
-              <input type="text" id="techSkillsInput" class="form-control" placeholder="Ej: JavaScript, React, Node.js, Python, PostgreSQL, Docker, AWS (Separadas por comas)">
+              <input type="text" id="techSkillsInput" class="form-control"
+                placeholder="Ej: JavaScript, React, Node.js, Python, PostgreSQL, Docker, AWS (Separadas por comas)">
               <span class="field-hint">Ingresa las habilidades separadas por comas.</span>
             </div>
 
             <div class="form-group mb-4">
               <label for="softSkillsInput">Habilidades Interpersonales (Soft Skills)</label>
-              <input type="text" id="softSkillsInput" class="form-control" placeholder="Ej: Liderazgo de equipos, Pensamiento crítico, Resolución de problemas, Comunicación eficaz">
+              <input type="text" id="softSkillsInput" class="form-control"
+                placeholder="Ej: Liderazgo de equipos, Pensamiento crítico, Resolución de problemas, Comunicación eficaz">
               <span class="field-hint">Habilidades clave de colaboración y metodología.</span>
             </div>
 
             <div class="form-group">
               <label for="toolsInput">Herramientas & Tecnologías Específicas</label>
-              <input type="text" id="toolsInput" class="form-control" placeholder="Ej: Git, JIRA, Figma, VS Code, CI/CD pipelines, Postman">
+              <input type="text" id="toolsInput" class="form-control"
+                placeholder="Ej: Git, JIRA, Figma, VS Code, CI/CD pipelines, Postman">
             </div>
           </div>
 
@@ -283,7 +327,8 @@
             <div class="pane-header flex-between">
               <div>
                 <h2>Proyectos Destacados</h2>
-                <p class="pane-desc">Demuestra tus habilidades prácticas mediante proyectos relevantes o contribuciones clave.</p>
+                <p class="pane-desc">Demuestra tus habilidades prácticas mediante proyectos relevantes o contribuciones
+                  clave.</p>
               </div>
               <button type="button" id="btnAddProject" class="btn btn-secondary btn-sm">
                 + Agregar Proyecto
@@ -296,7 +341,8 @@
           <div class="tab-pane" id="pane-extras">
             <div class="pane-header">
               <h2>Certificaciones & Idiomas</h2>
-              <p class="pane-desc">Credenciales validadas e idiomas que potencian tu perfil ante empresas internacionales.</p>
+              <p class="pane-desc">Credenciales validadas e idiomas que potencian tu perfil ante empresas
+                internacionales.</p>
             </div>
 
             <!-- Certificaciones -->
@@ -350,7 +396,7 @@
                 <option value="font-fira-code">Fira Code (Developer Monospace)</option>
               </select>
             </div>
-            
+
             <button id="btnZoomIn" class="btn btn-secondary btn-icon-only" title="Aumentar zoom">+</button>
             <button id="btnZoomOut" class="btn btn-secondary btn-icon-only" title="Disminuir zoom">-</button>
           </div>
@@ -403,10 +449,12 @@
           <button class="modal-close btn-close-modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p class="text-subtle mb-3">Puedes mantener distintas versiones de tu CV personalizadas para cada vacante o puesto al que apliques.</p>
+          <p class="text-subtle mb-3">Puedes mantener distintas versiones de tu CV personalizadas para cada vacante o
+            puesto al que apliques.</p>
 
           <div class="create-cv-bar mb-4">
-            <input type="text" id="newCvTitleInput" class="form-control" placeholder="Nombre para nuevo CV (ej: CV Senior Frontend)">
+            <input type="text" id="newCvTitleInput" class="form-control"
+              placeholder="Nombre para nuevo CV (ej: CV Senior Frontend)">
             <button id="btnCreateNewCV" class="btn btn-primary">+ Crear CV</button>
           </div>
 
@@ -464,8 +512,9 @@
           <button class="modal-close btn-close-modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p class="text-subtle mb-3">Selecciona uno de los 3 perfiles profesionales optimizados para reemplazar el contenido actual con datos de prueba:</p>
-          
+          <p class="text-subtle mb-3">Selecciona uno de los 3 perfiles profesionales optimizados para reemplazar el
+            contenido actual con datos de prueba:</p>
+
           <div class="sample-cards-grid">
             <button class="sample-card-btn" data-sample="software_engineer">
               <div class="sample-card-icon">💻</div>
@@ -508,4 +557,5 @@
   <script src="js/pdfExporter.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
