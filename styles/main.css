@@ -964,19 +964,135 @@ body {
   display: none;
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Mobile View Toggle Styling */
+.mobile-view-toggle {
+  display: none;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.mobile-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  transition: var(--transition-fast);
+}
+
+.mobile-toggle-btn.active {
+  background: var(--surftware-gradient);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+}
+
+/* Responsividad Avanzada Surftware (Mobile & Tablet Optimization) */
 @media (max-width: 1024px) {
+  .mobile-view-toggle {
+    display: flex;
+    align-items: center;
+  }
+
   .main-split-container {
     flex-direction: column;
-    overflow-y: auto;
+    height: calc(100vh - 64px);
+    overflow: hidden;
   }
 
   .editor-panel, .preview-panel {
     width: 100%;
-    height: auto;
+    flex: 1;
+    height: calc(100vh - 64px);
   }
 
-  .preview-panel {
-    min-height: 700px;
+  /* Visibilidad alternada en dispositivos móviles */
+  body.mobile-view-preview .editor-panel {
+    display: none !important;
+  }
+
+  body.mobile-view-preview .preview-panel {
+    display: flex !important;
+  }
+
+  body.mobile-view-editor .preview-panel {
+    display: none !important;
+  }
+
+  body.mobile-view-editor .editor-panel {
+    display: flex !important;
+  }
+
+  .cv-selector-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 0.85rem;
+  }
+
+  .brand-titles h1 {
+    font-size: 1rem;
+  }
+
+  .brand-badge {
+    display: none;
+  }
+
+  .cotizador-steps-bar {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .step-label {
+    display: none;
+  }
+
+  .step-line {
+    margin: 0 0.25rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-half {
+    grid-column: span 2;
+  }
+
+  .editor-tabs {
+    padding: 0.2rem;
+  }
+
+  .tab-btn {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.78rem;
+  }
+
+  .modal-card {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .ats-score-widget .score-title {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview-scroll-wrapper {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .ats-paper-page {
+    transform: scale(0.72);
+    transform-origin: top center;
+    margin-bottom: -30%;
   }
 }

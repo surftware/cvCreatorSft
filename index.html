@@ -3,17 +3,63 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ATS Resume Craft | Creador de CV Optimizado para ATS</title>
-  <meta name="description"
-    content="Plataforma SaaS interactiva para crear, editar y optimizar currículums vitae 100% compatibles con filtros ATS de selección de personal.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ATS Resume Craft | Creador & Optimizador de CV para Filtros ATS | Surftware</title>
+  <meta name="description" content="Crea y optimiza tu Currículum Vitae profesional en tiempo real para superar los filtros automáticos ATS de reclutamiento. Plantillas limpias, puntuación ATS interactiva, exportación vectorial a PDF y múltiples formatos. Desarrollado por Surftware.">
+  <meta name="keywords" content="currículum ATS, creador de CV, optimizador de currículum, plantillas CV ATS, resume builder español, Surftware, plantilla currículum gratis PDF, validador ATS">
+  <meta name="author" content="Surftware - Agencia de Software y Tecnologías de la Información">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://surftware.com.mx/cvCreatorSft/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://surftware.com.mx/cvCreatorSft/">
+  <meta property="og:site_name" content="Surftware Tech Solutions">
+  <meta property="og:title" content="ATS Resume Craft | Creador de CV Optimizado para Filtros ATS">
+  <meta property="og:description" content="Plataforma SaaS interactiva para crear, editar y optimizar currículums vitae 100% compatibles con filtros ATS de selección de personal. Diagnóstico en tiempo real y exportación PDF vectorial.">
+  <meta property="og:image" content="https://surftware.com.mx/cvCreatorSft/images/creacion-paginas-web.webp">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://surftware.com.mx/cvCreatorSft/">
+  <meta name="twitter:title" content="ATS Resume Craft | Creador de CV Optimizado para ATS">
+  <meta name="twitter:description" content="Diseña un CV profesional apto para algoritmos ATS con diagnóstico en tiempo real, sugerencias por industria y exportación PDF.">
+  <meta name="twitter:image" content="https://surftware.com.mx/cvCreatorSft/images/creacion-paginas-web.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="images/surftware.webp">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/ats-templates.css">
+
+  <!-- Datos Estructurados JSON-LD Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ATS Resume Craft",
+    "url": "https://surftware.com.mx/cvCreatorSft/",
+    "description": "Herramienta web interactiva para la creación y evaluación de currículums vitae optimizados para sistemas ATS.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires HTML5, JavaScript and CSS3",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Surftware",
+      "url": "https://surftware.com.mx"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -21,12 +67,18 @@
     <!-- Header Principal Surftware Style -->
     <header class="app-header">
       <div class="brand-section">
-        <img src="images/creacion-paginas-web.webp" alt="Surftware Logo"
+        <img src="images/creacion-paginas-web.webp" alt="Surftware Logo - Desarrollo Web y Software"
           style="height: 38px; width: auto; filter: drop-shadow(0 0 10px rgba(255, 0, 127, 0.4));">
         <div class="brand-titles">
           <h1>ATS <span class="brand-sub">Craft</span></h1>
           <span class="brand-badge">Surftware Tech</span>
         </div>
+      </div>
+
+      <!-- Conmutador de vista para dispositivos móviles -->
+      <div class="mobile-view-toggle" id="mobileViewToggle" aria-label="Cambiar vista en móviles">
+        <button type="button" class="mobile-toggle-btn active" data-view="editor">✏️ Editor</button>
+        <button type="button" class="mobile-toggle-btn" data-view="preview">👁️ Vista Previa</button>
       </div>
 
       <!-- Selector de CVs & Gestión -->
