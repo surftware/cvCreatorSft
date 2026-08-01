@@ -18,10 +18,7 @@ const App = {
     // 2. Inicializar Tema (Oscuro/Claro)
     this.initTheme();
 
-    // 3. Inicializar Vista Móvil
-    this.initMobileView();
-
-    // 4. Renderizar Formularios y Selector de CVs
+    // 3. Renderizar Formularios y Selector de CVs
     this.renderCVSelector();
     this.fillFormsFromData();
 
@@ -31,12 +28,6 @@ const App = {
 
     // 6. Vincular Eventos de la Interfaz
     this.bindEvents();
-  },
-
-  initMobileView() {
-    if (window.innerWidth <= 1024) {
-      document.body.classList.add("mobile-view-editor");
-    }
   },
 
   /* --- GESTIÓN DE TEMAS (Oscuro / Claro) --- */
@@ -709,22 +700,6 @@ const App = {
 
   /* --- EVENTOS DE INTERFAZ Y EVENT LISTENERS --- */
   bindEvents() {
-    // Mobile View Toggle Switch
-    document.querySelectorAll(".mobile-toggle-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".mobile-toggle-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        const view = btn.getAttribute("data-view");
-        if (view === "preview") {
-          document.body.classList.remove("mobile-view-editor");
-          document.body.classList.add("mobile-view-preview");
-        } else {
-          document.body.classList.remove("mobile-view-preview");
-          document.body.classList.add("mobile-view-editor");
-        }
-      });
-    });
-
     // 0. Pasos del CotizadorSft
     document.querySelectorAll(".cotizador-step").forEach((stepBtn, idx) => {
       stepBtn.addEventListener("click", () => {

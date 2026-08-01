@@ -964,68 +964,22 @@ body {
   display: none;
 }
 
-/* Mobile View Toggle Styling */
-.mobile-view-toggle {
-  display: none;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-color);
-  border-radius: 20px;
-  padding: 2px;
-}
-
-.mobile-toggle-btn {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.35rem 0.75rem;
-  border-radius: 16px;
-  cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
-  transition: var(--transition-fast);
-}
-
-.mobile-toggle-btn.active {
-  background: var(--surftware-gradient);
-  color: #ffffff;
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
-}
-
 /* Responsividad Avanzada Surftware (Mobile & Tablet Optimization) */
 @media (max-width: 1024px) {
-  .mobile-view-toggle {
-    display: flex;
-    align-items: center;
+  body {
+    overflow-y: auto;
+    height: auto;
   }
 
   .main-split-container {
     flex-direction: column;
-    height: calc(100vh - 64px);
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
   }
 
   .editor-panel, .preview-panel {
     width: 100%;
-    flex: 1;
-    height: calc(100vh - 64px);
-  }
-
-  /* Visibilidad alternada en dispositivos móviles */
-  body.mobile-view-preview .editor-panel {
-    display: none !important;
-  }
-
-  body.mobile-view-preview .preview-panel {
-    display: flex !important;
-  }
-
-  body.mobile-view-editor .preview-panel {
-    display: none !important;
-  }
-
-  body.mobile-view-editor .editor-panel {
-    display: flex !important;
+    height: auto;
   }
 
   .cv-selector-container {
